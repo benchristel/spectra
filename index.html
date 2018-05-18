@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spectra</title>
+
+    <style type="text/css">
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+
+  font-size: 72px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  padding: 72px;
+  line-height: 130%;
+}
+
+.Black {
+  background-color: Black;
+  color: #fff;
+}
+.Navy {
+  background-color: Navy;
+  color: #fff;
+}
+.DarkBlue {
+  background-color: DarkBlue;
+  color: #fff;
+}
+.MediumBlue {
+  background-color: MediumBlue;
+  color: #fff;
+}
+.Blue {
+  background-color: Blue;
+  color: #fff;
+}
+.DarkGreen {
+  background-color: DarkGreen;
+  color: #fff;
+}
+.Green {
+  background-color: Green;
+  color: #fff;
+}
+.Teal {
+  background-color: Teal;
+  color: #fff;
+}
+.DarkCyan {
+  background-color: DarkCyan;
+  color: #fff;
+}
+.DeepSkyBlue {
+  background-color: DeepSkyBlue;
+  color: #fff;
+}
+.DarkTurquoise {
+  background-color: DarkTurquoise;
+  color: #000;
+}
+.MediumSpringGreen {
+  background-color: MediumSpringGreen;
+  color: #000;
+}
+.Lime {
+  background-color: Lime;
+  color: #000;
+}
+.SpringGreen {
+  background-color: SpringGreen;
+  color: #000;
+}
+.Aqua {
+  background-color: Aqua;
+  color: #000;
+}
+.Cyan {
+  background-color: Cyan;
+  color: #000;
+}
+.MidnightBlue {
+  background-color: MidnightBlue;
+  color: #fff;
+}
+.DodgerBlue {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.LightSeaGreen {
+  background-color: LightSeaGreen;
+  color: #fff;
+}
+.ForestGreen {
+  background-color: ForestGreen;
+  color: #fff;
+}
+.SeaGreen {
+  background-color: SeaGreen;
+  color: #000;
+}
+.DarkSlateGray {
+  background-color: DarkSlateGray;
+  color: #fff;
+}
+.LimeGreen {
+  background-color: LimeGreen;
+  color: #000;
+}
+.MediumSeaGreen {
+  background-color: MediumSeaGreen;
+  color: #fff;
+}
+.Turquoise {
+  background-color: Turquoise;
+  color: #000;
+}
+.RoyalBlue {
+  background-color: RoyalBlue;
+  color: #fff;
+}
+.SteelBlue {
+  background-color: SteelBlue;
+  color: #fff;
+}
+.DarkSlateBlue {
+  background-color: DarkSlateBlue;
+  color: #fff;
+}
+.MediumTurquoise {
+  background-color: MediumTurquoise;
+  color: #fff;
+}
+.Indigo  {
+  background-color: Indigo ;
+  color: #fff;
+}
+.DarkOliveGreen {
+  background-color: DarkOliveGreen;
+  color: #fff;
+}
+.CadetBlue {
+  background-color: CadetBlue;
+  color: #fff;
+}
+.CornflowerBlue {
+  background-color: CornflowerBlue;
+  color: #fff;
+}
+.RebeccaPurple {
+  background-color: RebeccaPurple;
+  color: #fff;
+}
+.MediumAquaMarine {
+  background-color: MediumAquaMarine;
+  color: #fff;
+}
+.DimGray {
+  background-color: DimGray;
+  color: #fff;
+}
+.SlateBlue {
+  background-color: SlateBlue;
+  color: #fff;
+}
+.OliveDrab {
+  background-color: OliveDrab;
+  color: #fff;
+}
+.SlateGray {
+  background-color: SlateGray;
+  color: #fff;
+}
+.LightSlateGray {
+  background-color: LightSlateGray;
+  color: #fff;
+}
+.MediumSlateBlue {
+  background-color: MediumSlateBlue;
+  color: #fff;
+}
+.LawnGreen {
+  background-color: LawnGreen;
+  color: #000;
+}
+.Chartreuse {
+  background-color: Chartreuse;
+  color: #000;
+}
+.Aquamarine {
+  background-color: Aquamarine;
+  color: #000;
+}
+.Maroon {
+  background-color: Maroon;
+  color: #fff;
+}
+.Purple {
+  background-color: Purple;
+  color: #fff;
+}
+.Olive {
+  background-color: Olive;
+  color: #fff;
+}
+.Gray {
+  background-color: Gray;
+  color: #fff;
+}
+.SkyBlue {
+  background-color: SkyBlue;
+  color: #000;
+}
+.LightSkyBlue {
+  background-color: LightSkyBlue;
+  color: #000;
+}
+.BlueViolet {
+  background-color: BlueViolet;
+  color: #fff;
+}
+.DarkRed {
+  background-color: DarkRed;
+  color: #fff;
+}
+.DarkMagenta {
+  background-color: DarkMagenta;
+  color: #fff;
+}
+.SaddleBrown {
+  background-color: SaddleBrown;
+  color: #fff;
+}
+.DarkSeaGreen {
+  background-color: DarkSeaGreen;
+  color: #fff;
+}
+.LightGreen {
+  background-color: LightGreen;
+  color: #000;
+}
+.MediumPurple {
+  background-color: MediumPurple;
+  color: #fff;
+}
+.DarkViolet {
+  background-color: DarkViolet;
+  color: #fff;
+}
+.PaleGreen {
+  background-color: PaleGreen;
+  color: #000;
+}
+.DarkOrchid {
+  background-color: DarkOrchid;
+  color: #fff;
+}
+.YellowGreen {
+  background-color: YellowGreen;
+  color: #fff;
+}
+.Sienna {
+  background-color: Sienna;
+  color: #fff;
+}
+.Brown {
+  background-color: Brown;
+  color: #fff;
+}
+.DarkGray {
+  background-color: DarkGray;
+  color: #fff;
+}
+.LightBlue {
+  background-color: LightBlue;
+  color: #000;
+}
+.GreenYellow {
+  background-color: GreenYellow;
+  color: #000;
+}
+.PaleTurquoise {
+  background-color: PaleTurquoise;
+  color: #000;
+}
+.LightSteelBlue {
+  background-color: LightSteelBlue;
+  color: #000;
+}
+.PowderBlue {
+  background-color: PowderBlue;
+  color: #000;
+}
+.FireBrick {
+  background-color: FireBrick;
+  color: #fff;
+}
+.DarkGoldenRod {
+  background-color: DarkGoldenRod;
+  color: #fff;
+}
+.MediumOrchid {
+  background-color: MediumOrchid;
+  color: #fff;
+}
+.RosyBrown {
+  background-color: RosyBrown;
+  color: #000;
+}
+.DarkKhaki {
+  background-color: DarkKhaki;
+  color: #fff;
+}
+.Silver {
+  background-color: Silver;
+  color: #000;
+}
+.MediumVioletRed {
+  background-color: MediumVioletRed;
+  color: #fff;
+}
+.IndianRed  {
+  background-color: IndianRed ;
+  color: #fff;
+}
+.Peru {
+  background-color: Peru;
+  color: #fff;
+}
+.Chocolate {
+  background-color: Chocolate;
+  color: #fff;
+}
+.Tan {
+  background-color: Tan;
+  color: #000;
+}
+.LightGray {
+  background-color: LightGray;
+  color: #000;
+}
+.Thistle {
+  background-color: Thistle;
+  color: #000;
+}
+.Orchid {
+  background-color: Orchid;
+  color: #000;
+}
+.GoldenRod {
+  background-color: GoldenRod;
+  color: #fff;
+}
+.PaleVioletRed {
+  background-color: PaleVioletRed;
+  color: #fff;
+}
+.Crimson {
+  background-color: Crimson;
+  color: #fff;
+}
+.Gainsboro {
+  background-color: Gainsboro;
+  color: #000;
+}
+.Plum {
+  background-color: Plum;
+  color: #000;
+}
+.BurlyWood {
+  background-color: BurlyWood;
+  color: #000;
+}
+.LightCyan {
+  background-color: LightCyan;
+  color: #000;
+}
+.Lavender {
+  background-color: Lavender;
+  color: #000;
+}
+.DarkSalmon {
+  background-color: DarkSalmon;
+  color: #000;
+}
+.Violet {
+  background-color: Violet;
+  color: #000;
+}
+.PaleGoldenRod {
+  background-color: PaleGoldenRod;
+  color: #000;
+}
+.LightCoral {
+  background-color: LightCoral;
+  color: #000;
+}
+.Khaki {
+  background-color: Khaki;
+  color: #000;
+}
+.AliceBlue {
+  background-color: AliceBlue;
+  color: #000;
+}
+.HoneyDew {
+  background-color: HoneyDew;
+  color: #000;
+}
+.Azure {
+  background-color: Azure;
+  color: #000;
+}
+.SandyBrown {
+  background-color: SandyBrown;
+  color: #000;
+}
+.Wheat {
+  background-color: Wheat;
+  color: #000;
+}
+.Beige {
+  background-color: Beige;
+  color: #000;
+}
+.WhiteSmoke {
+  background-color: WhiteSmoke;
+  color: #000;
+}
+.MintCream {
+  background-color: MintCream;
+  color: #000;
+}
+.GhostWhite {
+  background-color: GhostWhite;
+  color: #000;
+}
+.Salmon {
+  background-color: Salmon;
+  color: #000;
+}
+.AntiqueWhite {
+  background-color: AntiqueWhite;
+  color: #000;
+}
+.Linen {
+  background-color: Linen;
+  color: #000;
+}
+.LightGoldenRodYellow {
+  background-color: LightGoldenRodYellow;
+  color: #000;
+}
+.OldLace {
+  background-color: OldLace;
+  color: #000;
+}
+.Red {
+  background-color: Red;
+  color: #fff;
+}
+.Fuchsia {
+  background-color: Fuchsia;
+  color: #fff;
+}
+.Magenta {
+  background-color: Magenta;
+  color: #fff;
+}
+.DeepPink {
+  background-color: DeepPink;
+  color: #fff;
+}
+.OrangeRed {
+  background-color: OrangeRed;
+  color: #fff;
+}
+.Tomato {
+  background-color: Tomato;
+  color: #fff;
+}
+.HotPink {
+  background-color: HotPink;
+  color: #000;
+}
+.Coral {
+  background-color: Coral;
+  color: #000;
+}
+.DarkOrange {
+  background-color: DarkOrange;
+  color: #000;
+}
+.LightSalmon {
+  background-color: LightSalmon;
+  color: #000;
+}
+.Orange {
+  background-color: Orange;
+  color: #000;
+}
+.LightPink {
+  background-color: LightPink;
+  color: #000;
+}
+.Pink {
+  background-color: Pink;
+  color: #000;
+}
+.Gold {
+  background-color: Gold;
+  color: #000;
+}
+.PeachPuff {
+  background-color: PeachPuff;
+  color: #000;
+}
+.NavajoWhite {
+  background-color: NavajoWhite;
+  color: #000;
+}
+.Moccasin {
+  background-color: Moccasin;
+  color: #000;
+}
+.Bisque {
+  background-color: Bisque;
+  color: #000;
+}
+.MistyRose {
+  background-color: MistyRose;
+  color: #000;
+}
+.BlanchedAlmond {
+  background-color: BlanchedAlmond;
+  color: #000;
+}
+.PapayaWhip {
+  background-color: PapayaWhip;
+  color: #000;
+}
+.LavenderBlush {
+  background-color: LavenderBlush;
+  color: #000;
+}
+.SeaShell {
+  background-color: SeaShell;
+  color: #000;
+}
+.Cornsilk {
+  background-color: Cornsilk;
+  color: #000;
+}
+.LemonChiffon {
+  background-color: LemonChiffon;
+  color: #000;
+}
+.FloralWhite {
+  background-color: FloralWhite;
+  color: #000;
+}
+.Snow {
+  background-color: Snow;
+  color: #000;
+}
+.Yellow {
+  background-color: Yellow;
+  color: #000;
+}
+.LightYellow {
+  background-color: LightYellow;
+  color: #000;
+}
+.Ivory {
+  background-color: Ivory;
+  color: #000;
+}
+.White {
+  background-color: White;
+  color: #000;
+}
+
+    </style>
+  </head>
+  <body>
+
+<div id="container">
+
+"Correct by Construction" is a good goal to strive for.
+
+</div>
+
+<script type="text/javascript">
+
+const webColors = [
+  'Black',
+  'Navy',
+  'DarkBlue',
+  'MediumBlue',
+  'Blue',
+  'DarkGreen',
+  'Green',
+  'Teal',
+  'DarkCyan',
+  'DeepSkyBlue',
+  'DarkTurquoise',
+  'MediumSpringGreen',
+  'Lime',
+  'SpringGreen',
+  'Aqua',
+  'Cyan',
+  'MidnightBlue',
+  'DodgerBlue',
+  'LightSeaGreen',
+  'ForestGreen',
+  'SeaGreen',
+  'DarkSlateGray',
+  'LimeGreen',
+  'MediumSeaGreen',
+  'Turquoise',
+  'RoyalBlue',
+  'SteelBlue',
+  'DarkSlateBlue',
+  'MediumTurquoise',
+  'Indigo ',
+  'DarkOliveGreen',
+  'CadetBlue',
+  'CornflowerBlue',
+  'RebeccaPurple',
+  'MediumAquaMarine',
+  'DimGray',
+  'SlateBlue',
+  'OliveDrab',
+  'SlateGray',
+  'LightSlateGray',
+  'MediumSlateBlue',
+  'LawnGreen',
+  'Chartreuse',
+  'Aquamarine',
+  'Maroon',
+  'Purple',
+  'Olive',
+  'Gray',
+  'SkyBlue',
+  'LightSkyBlue',
+  'BlueViolet',
+  'DarkRed',
+  'DarkMagenta',
+  'SaddleBrown',
+  'DarkSeaGreen',
+  'LightGreen',
+  'MediumPurple',
+  'DarkViolet',
+  'PaleGreen',
+  'DarkOrchid',
+  'YellowGreen',
+  'Sienna',
+  'Brown',
+  'DarkGray',
+  'LightBlue',
+  'GreenYellow',
+  'PaleTurquoise',
+  'LightSteelBlue',
+  'PowderBlue',
+  'FireBrick',
+  'DarkGoldenRod',
+  'MediumOrchid',
+  'RosyBrown',
+  'DarkKhaki',
+  'Silver',
+  'MediumVioletRed',
+  'IndianRed ',
+  'Peru',
+  'Chocolate',
+  'Tan',
+  'LightGray',
+  'Thistle',
+  'Orchid',
+  'GoldenRod',
+  'PaleVioletRed',
+  'Crimson',
+  'Gainsboro',
+  'Plum',
+  'BurlyWood',
+  'LightCyan',
+  'Lavender',
+  'DarkSalmon',
+  'Violet',
+  'PaleGoldenRod',
+  'LightCoral',
+  'Khaki',
+  'AliceBlue',
+  'HoneyDew',
+  'Azure',
+  'SandyBrown',
+  'Wheat',
+  'Beige',
+  'WhiteSmoke',
+  'MintCream',
+  'GhostWhite',
+  'Salmon',
+  'AntiqueWhite',
+  'Linen',
+  'LightGoldenRodYellow',
+  'OldLace',
+  'Red',
+  'Fuchsia',
+  'Magenta',
+  'DeepPink',
+  'OrangeRed',
+  'Tomato',
+  'HotPink',
+  'Coral',
+  'DarkOrange',
+  'LightSalmon',
+  'Orange',
+  'LightPink',
+  'Pink',
+  'Gold',
+  'PeachPuff',
+  'NavajoWhite',
+  'Moccasin',
+  'Bisque',
+  'MistyRose',
+  'BlanchedAlmond',
+  'PapayaWhip',
+  'LavenderBlush',
+  'SeaShell',
+  'Cornsilk',
+  'LemonChiffon',
+  'FloralWhite',
+  'Snow',
+  'Yellow',
+  'LightYellow',
+  'Ivory',
+  'White'
+]
+
+const messages = [
+  '&ldquo;Correct by Construction&rdquo; is a good goal to strive for.',
+  'The Liskov Substitution Principle (the L of SOLID) is named for Barbara Liskov.',
+]
+
+function randomInt(cap) {
+  return Math.floor(Math.random() * cap)
+}
+
+function pickRandomly(array) {
+  return array[randomInt(array.length)]
+}
+
+function randomizeMessage() {
+  let className = pickRandomly(webColors)
+  let message = pickRandomly(messages)
+
+  let container = document.querySelector('#container')
+  container.setAttribute('class', className)
+  container.innerHTML = message
+}
+
+const MINUTES = 60 * 1000
+
+randomizeMessage()
+setInterval(randomizeMessage, 15 * MINUTES)
+
+</script>
+
+  </body>
+</html>
