@@ -771,20 +771,37 @@ function randomInt(cap) {
 function pickRandomly(array) {
   return array[randomInt(array.length)]
 }
+  
+function setMessage(message, className) {
+  let container = document.querySelector('#container')
+  container.setAttribute('class', className)
+  container.innerHTML = message
+}
 
 function randomizeMessage() {
   let className = pickRandomly(webColors)
   let message = pickRandomly(messages)
-
-  let container = document.querySelector('#container')
-  container.setAttribute('class', className)
-  container.innerHTML = message
+  setMessage(message, className)
 }
 
 const MINUTES = 60 * 1000
 
 randomizeMessage()
 setInterval(randomizeMessage, 15 * MINUTES)
+
+// If you press space, cycle through the available messages.
+// This allows you to visually inspect the messages to test that
+// everything renders correctly.
+let manualCycleIndex = 0
+document.body.addEventListener('keydown', event => {
+  if ('j' === event.key) {
+    manualCycleIndex++
+    setMessage(messages[manualCycleIndex % messages.length], pickRandomly(webColors))
+  } else if ('k' === event.key) {
+    manualCycleIndex--
+    setMessage(messages[manualCycleIndex % messages.length], pickRandomly(webColors))
+  }
+})
 
 </script>
 
